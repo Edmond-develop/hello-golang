@@ -1,4 +1,4 @@
-name: golang-pipeline
+name: golang-pipeline
 on: push
 jobs:
   test:
@@ -11,5 +11,4 @@ jobs:
         run: GOOS=linux GOARCH=amd64 go test
 
       - name: Vet
-        run: 
-          go vet./...
+        run: go vet ./...
